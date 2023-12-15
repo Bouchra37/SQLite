@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"
+        android:text="Nom :" />
+
+    <EditText
+        android:id="@+id/nom"
+        style="@style/editText"
+        android:background="@color/black" />
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:text="Prenom :" />
+
+    <EditText
+        android:id="@+id/prenom"
+        style="@style/editText"
+        android:background="@color/black" />
+
+    <Button
+        android:id="@+id/bn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="#5E83DF"
+        android:text="Valider" />
+
+    <TextView
+        android:id="@+id/textView3"
+        style="@style/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:text="ID Etudiant :" />
+
+    <EditText
+        android:id="@+id/id"
+        style="@style/editText"
+        android:background="@color/black"
+        android:ems="10"
+        android:inputType="numberSigned" />
+
+
+    <TextView
+        android:id="@+id/res"
+        android:layout_width="356dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+
+        android:layout_weight="0.04"
+        android:background="#EFEDED"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/load"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="#BC7ADD"
+            android:text="Chercher" />
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="16dp"
+            android:backgroundTint="#5D9C66"
+            android:text="Supprimer" />
+
+    </LinearLayout>
+
+</LinearLayout>
